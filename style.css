@@ -4,6 +4,12 @@
    --marker: 'Permanent Marker', cursive; 
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -19,7 +25,6 @@ header {
   background-color: var(--black);
   color: var(--grey);
   font-family: var(--marker);
-  font-size: 28px;
 }
 
 h1 {
@@ -28,63 +33,74 @@ h1 {
   align-items: center;
   padding: 2px;
   color: var(--grey);
+  font-size: 48px;
 
 }
 
-h2 {
+.header li {
+  display: inline;
+  justify-content:space-between;
+  color: var(--grey);
+  font-size: 20px;
+  
+}
 
-  font-size: 250%;
-  position:relative;
-  margin-top: -20px
+
+h2 {
+  text-align: center;
+  margin-top:5px;
+  font-family: var(--marker);
+  padding: 25px;
+  font-size: 28px;
  }
 
 
-main {
-  display: flex;
-  flex: 1 1 0;
-  max-width: 96%;
-  margin: 2% auto;
-}
-
 .flex-container {
-  display: inline-flex;
+  display: flex;
   flex-direction: wrap;
   justify-content: space-between;
   margin: 2% auto;
   border-color: var(--grey);
-  padding: 5px;
-  border: 8px solid
+  padding: 20px;
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 15px 50px;
+  width: 65%;
+  position: relative;
+  
 }
 
-.flex-container .overlay-text {
+ .overlay-text {
   position: absolute;
-  width: 60%;
   font-size: 24px;
-  bottom:-40%;
-  right: 16px;
-  color: var(--grey); 
+  color: #fff;
   font-weight: bold;
-  letter-spacing: -1px;  
-  background: rgb(0, 0, 0);
+  letter-spacing: -2px;
   background: rgba(0, 0, 0, 0.7);
-  padding: 10px; 
+  padding: 6px; 
+  right: 0;
+  width: 45%;
+  top: 70%;
   
 }
 
 .hero {
-  height: 100%;
+  height: 600px;
   width: 100%;
   margin-bottom: 1px;
   background-image: url("./assests/images/Test1image.jpg");
   background-size: cover;
   background-position: center;
+  border-radius: 15px 50px;
 
 }
 
-.flex-child {
-  flex: 1;
-  border: 2px solid var(--grey);
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 4px;
 }
+
 
 footer {
   display: flex;
@@ -92,14 +108,4 @@ footer {
   padding: 2%;
   background-color: #13293d;
   color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  main {
-    max-width: 1200px;
-  }
 }
