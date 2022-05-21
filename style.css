@@ -1,42 +1,43 @@
+:root {
+   --black: #000000;
+   --grey: LightSlateGray;
+   --marker: 'Permanent Marker', cursive; 
+}
+
 body {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
-  background-color: #13293d;
-  color: #fff;
+  padding: 5%;
+  background-color: var(--black);
+  color: var(--grey);
+  font-family: var(--marker);
+  font-size: 28px;
 }
 
 h1 {
-  font-size: 200%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px;
+  color: var(--grey);
+
 }
 
 h2 {
-  margin: 2% 0;
+
   font-size: 250%;
-}
+  position:relative;
+  margin-top: -20px
+ }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 300px;
-}
-
-nav a {
-  color: #b9c6ae;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #fff;
-}
 
 main {
   display: flex;
@@ -45,41 +46,44 @@ main {
   margin: 2% auto;
 }
 
-article {
-  border-bottom: 1px solid #13293d;
+.flex-container {
+  display: inline-flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  margin: 2% auto;
+  border-color: var(--grey);
+  padding: 5px;
+  border: 8px solid
 }
 
-article p {
-  margin: 2% 0;
-  font-size: 110%;
+.flex-container .overlay-text {
+  position: absolute;
+  width: 60%;
+  font-size: 24px;
+  bottom:-40%;
+  right: 16px;
+  color: var(--grey); 
+  font-weight: bold;
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; 
+  
 }
 
-article ul {
-  margin-left: 5%;
-  font-size: 110%;
-  list-style: circle;
+.hero {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1px;
+  background-image: url("./assests/images/Test1image.jpg");
+  background-size: cover;
+  background-position: center;
+
 }
 
-article li {
-  margin: 5px 0;
-}
-
-/* Use :nth-child() to select every even list item */
-article ul li:nth-child(even) {
-  background-color: #b9c6ae;
-  color: #13293d;
-}
-
-/* Use adjacent sibling combinator (+) to select all <p> elements that come immediately after a <ul> element inside of an <article> element */
-article ul + p {
-  background-color: #13293d;
-  color: #fff;
-}
-
-/* Use child combinator (>) with a wildcard selector (*) to select every single element that is a direct descendant (or child) of any <div> element in an <article> element */
-article div > * {
-  padding: 20px;
-  border: 4px solid #b9c6ae;
+.flex-child {
+  flex: 1;
+  border: 2px solid var(--grey);
 }
 
 footer {
