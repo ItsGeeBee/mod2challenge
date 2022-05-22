@@ -14,13 +14,13 @@
 
 <body>
   <header>
-    <h1>Grace Brown -<br>A work in Progress</h1>
+    <h1 id=home>Grace Brown -<br>A work in Progress</h1>
     <div class="header li">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skill Set</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#skill-set">Skill Set</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -28,44 +28,44 @@
   <main>
     <section>
         <h2>Who is Grace?</h2>
-        <div class="flex-container"> With a love of computers from a young age, and a background in customer service, I have learnt how cruical a quaility website can be to a successful business.
+        <div class="flex-container-outer">
+        <img src="./assests/images/bitmoji.png" class="bitmoji">
+        <div id="about-me" class="flex-container-about-me"> With a love of computers from a young age, and a background in customer service, I have learnt how cruical a quaility website can be to a successful business.
             blah blah blah 
+        </div>
         </div>
         <div class="flex-container">
         <div class="hero">
           <p class="overlay-text">vitae fuga blanditiis accusamus tempore!.<br>Consectetur, nisi, saepe quas sint consequuntur esse
-          voluptatum, dolores dolor</p>
-      <div></div>      
+          voluptatum, dolores dolor</p>  
       </div>
       </div>
-        <div class="flex-container">
-          <div class="row">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde
-            non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. 
-          </div>
-          
-          <div class="row">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde
-            non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. 
-          </div>
-          
-        </div>
-          <div class="flex-container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde
-            non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nisi, saepe quas sint consequuntur esse
-            voluptatum, dolores dolor aspernatur neque laborum dolorum dolorem repudiandae. Dignissimos eveniet sequi
-            corporis tempore ullam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde
-            non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore!</p>
+        <div id="skill-set" class="flex-container">
+        <div class="container">
+          <p class="overlay-text-small"> vitae fuga blanditiis accusamus tempore!.<br>Consectetur, nisi, saepe quas sint consequuntur esse
+            voluptatum, dolores dolor</p>
+            </div>
+        <div class="container2">
+          <p class="overlay-text-small2"> vitae fuga blanditiis accusamus tempore!.<br>Consectetur, nisi, saepe quas sint consequuntur esse
+            voluptatum, dolores dolor</p>
+         </div>
+          </div>    
+          <div class="flex-container"></div>
         </div>
     </section>
   </main>
 
   <footer>
-    <span>Thanks for visiting!</span>
+    <div>
+    <h4 id="contact">Contact</h4>
+    <br>
+    <ul>
+      <li><bold>Email:</bold> <a href="mailto:gracelbrown@hotmail.com">gracelbrown@hotmail.com</a>
+      </li>
+      <li><bold>Linkedin:</bold> <a href="https://www.linkedin.com/in/grace-brown-209485156/"> Grace Brown</a>
+      </li>
+    </ul>
+    </div>
   </footer>
 </body>
 
