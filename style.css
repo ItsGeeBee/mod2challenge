@@ -51,6 +51,7 @@ h2 {
   font-family: var(--marker);
   padding: 25px;
   font-size: 36px;
+  text-underline-position: below;
  }
 
 .bitmoji {
@@ -209,7 +210,9 @@ footer {
   }
   .hero {
     height: 400px;
-
+  }
+  h1 {
+    font-size: 22px;
   }
 }
 
