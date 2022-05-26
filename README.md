@@ -39,5 +39,5 @@ https://itsgeebee.github.io/mod2challenge/
 
 ## Example of how website should look
 
-<img src="assets\images\itsgeebee.github.io_mod2challenge_" width="800px" height="auto">
+<img src="assets\images\itsgeebee.github.io_mod2challenge_.png" width="800px" height="auto">
 
